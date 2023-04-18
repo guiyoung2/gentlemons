@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://code.jquery.com/jquery-3.6.1.js"></script>
+    <link rel="stylesheet" href="./style.css" />
+    <script src="./main.js"></script>
+    <link
+      rel="stylesheet"
+      href="./OwlCarousel2-2.3.4/docs/assets/owlcarousel/assets/owl.carousel.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="./OwlCarousel2-2.3.4/docs/assets/owlcarousel/assets/owl.theme.default.min.css"
+    />
+    <script src="./OwlCarousel2-2.3.4/docs/assets/owlcarousel/owl.carousel.min.js"></script>
+
+    <title>GENTLE MONSTER</title>
+  </head>
+  <body>
+    <header class="main_header">
+      <div class="logo">
+        <a href="https://www.gentlemonster.com/kr/">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 166 15.9">
+            <path
+              d="M7.3 5.3V4.1c0-1.3-.6-1.9-2.1-1.9-1.6 0-2.2.6-2.2 1.9v7.7c0 1.3.5 1.9 2.1 1.9 1.5 0 2.2-1 2.2-2.5V9.4H4.8V7.2h5.5v8.5H7.7v-1.2c-.5.7-1.4 1.5-3.5 1.5C1.5 16 0 14.9 0 11.3V4.8C0 1.3 2.1 0 5.2 0c3 0 5.1 1.4 5.1 4.1v1.2h-3zm14.9-5v2.3h-6v3.9h5.4v2.2h-5.4v4.7h6v2.3h-9V.3h9zm13.5 0v15.3H32L28 3.9v11.7h-3V.3h3.7l4 11.6V.3h3zm12.5 0v2.3h-3.8v13.1h-3V2.6h-3.8V.3h10.6zm4.9 13.1H59v2.3h-8.9V.3h3v13.1zM69.9.3v2.3h-6v3.9h5.4v2.2h-5.4v4.7h6v2.3h-9V.3h9zM91 .3v15.3h-3V3.9l-2.6 11.8H83L80.5 3.8v11.9h-3V.3h4.2L84.2 12 86.7.3H91zM104.1 5v5.9c0 3.7-1.8 5-5.1 5s-5.1-1.2-5.1-5V5c0-3.7 1.8-5 5.1-5s5.1 1.3 5.1 5zm-3-.7c0-1.6-.6-2.1-2.1-2.1-1.6 0-2.1.5-2.1 2.1v7.4c0 1.6.6 2 2.1 2 1.6 0 2.1-.5 2.1-2V4.3zm16.7-4v15.3h-3.7l-4-11.7v11.7h-3V.3h3.7l4 11.6V.3h3zm12.3 3.6v.9h-3V4c0-1.3-.2-1.8-1.7-1.8-1.4 0-1.7.6-1.7 1.6 0 .9.2 1.3 1 1.8l2.9 1.9c1.6 1 2.5 1.6 2.5 4.4 0 2.7-1.8 4-4.7 4-3.5 0-4.9-1.2-4.9-4v-1.3h3v1.1c0 1.6.5 2 1.9 2s1.7-.6 1.7-1.7-.2-1.5-1.2-2.2L123 7.9c-1.8-1.2-2.4-1.8-2.4-4 0-1.9 1.1-3.8 4.7-3.8 3.7-.1 4.8 1.5 4.8 3.8M142.2.3v2.3h-3.8v13.1h-3V2.6h-3.8V.3h10.6zm10.9 0v2.3h-6v3.9h5.4v2.2h-5.4v4.7h6v2.3h-9V.3h9zm12.4 10.2v3.3c0 .8.2 1.5.6 1.9H163c-.3-.4-.5-1.1-.5-1.9v-3.3c0-1.2-.5-1.6-1.6-1.6h-2.1v6.8h-3V.3h5.5c4 0 4.5 2.2 4.5 4.3 0 1.7-.9 2.9-3.1 3.3 1.9.1 2.8 1.1 2.8 2.6zm-4.6-3.9c1.6 0 1.9-.7 1.9-2s-.2-2-1.9-2h-2.1v4h2.1z"
+            ></path>
+          </svg>
+        </a>
+      </div>
+      <div class="nav_area">
+        <nav>
+          <ul>
+            <li>
+              <a href="#" class="sun">선글라스</a>
+              <div class="sun_sub">
+                <div class="sub">
+                  <div class="sub_lf">
+                    <p class="popular">인기 제품</p>
+                    <ul>
+                      <li><a href="#">비스 비바 01</a></li>
+                      <li><a href="#">하이저 01</a></li>
+                      <li><a href="#">로코코 01</a></li>
+                      <li><a href="#">줄라이 01</a></li>
+                      <li><a href="#">휴이 01</a></li>
+                      <li><a href="#">뮤지 01</a></li>
+                      <li><a href="#">쿠키 01</a></li>
+                    </ul>
+                  </div>
+                  <div class="sub_rt">
+                    <p class="collection">다양한 컬렉션을 만나보세요</p>
+                    <div class="rt_content">
+                      <div class="content_t">
+                        <div class="content">
+                          <img src="./img/sun1.jpg" alt="" /> 2023 컬렉션
+                        </div>
+                        <div class="content">
+                          <img src="./img/sun2.jpg" alt="" /> 볼드 컬렉션
+                        </div>
+                        <div class="content">
+                          <img src="./img/sun3.jpg" alt="" />베스트셀러
+                        </div>
+                        <div class="content">
+                          <img src="./img/sun4.jpg" alt="" />선물추천
+                        </div>
+                      </div>
+                      <div class="content_b">
+                        <div class="content">
+                          <img src="./img/sun5.jpg" alt="" />틴트 렌즈
+                        </div>
+                        <div class="content">
+                          <img src="./img/sun6.jpg" alt="" />클래식 디자인
+                        </div>
+                        <div class="content">
+                          <img src="./img/sun7.jpg" alt="" />사각 프레임
+                        </div>
+                        <div class="content">
+                          <img src="./img/sun8.jpg" alt="" />캣아이 프레임
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li>
+              <a href="#" class="glass">안경</a>
+              <div class="glass_sub">
+                <div class="sub">
+                  <div class="sub_lf">
+                    <p class="popular">인기 제품</p>
+                    <ul>
+                      <li><a href="#">부스터 01</a></li>
+                      <li><a href="#">9 프라우드 X 031</a></li>
+                      <li><a href="#">알리오 X 01</a></li>
+                      <li><a href="#">카타 C2</a></li>
+                      <li><a href="#">에디 01</a></li>
+                      <li><a href="#">키토 01</a></li>
+                      <li><a href="#">루토 01</a></li>
+                    </ul>
+                  </div>
+                  <div class="sub_rt">
+                    <p class="collection">다양한 컬렉션을 만나보세요</p>
+                    <div class="rt_content">
+                      <div class="content_t">
+                        <div class="content">
+                          <img src="./img/glass1.jpg" alt="" /> 베스트셀러
+                        </div>
+                        <div class="content">
+                          <img src="./img/glass2.jpg" alt="" /> 틴트 렌즈
+                        </div>
+                        <div class="content">
+                          <img src="./img/glass3.jpg" alt="" />블루라이트 차단
+                        </div>
+                        <div class="content">
+                          <img src="./img/glass4.jpg" alt="" />선물추천
+                        </div>
+                      </div>
+                      <div class="content_b">
+                        <div class="content">
+                          <img src="./img/glass5.jpg" alt="" />클래식 디자인
+                        </div>
+                        <div class="content">
+                          <img src="./img/glass6.jpg" alt="" />사각 프레임
+                        </div>
+                        <div class="content">
+                          <img src="./img/glass7.jpg" alt="" />원형 프레임
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li>
+              <a href="#" class="col">콜라보레이션</a>
+              <div class="col_sub">
+                <div class="sub">
+                  <div class="sub_rt">
+                    <p class="collection">다양한 콜라보레이션</p>
+                    <div class="rt_content">
+                      <div class="content_t">
+                        <div class="content">
+                          <img src="./img/col1.jpg" alt="" />몽크레르
+                        </div>
+                        <div class="content">
+                          <img src="./img/col2.jpg" alt="" />HBA
+                        </div>
+                        <div class="content">
+                          <img src="./img/col3.jpg" alt="" />젠틀 가든
+                        </div>
+                        <div class="content">
+                          <img src="./img/col4.jpg" alt="" />코페르니
+                        </div>
+                        <div class="content">
+                          <img src="./img/col5.jpg" alt="" />YK Jeong
+                        </div>
+                        <div class="content">
+                          <img src="./img/col6.jpg" alt="" />헤론 프레스톤
+                        </div>
+                        <div class="content">
+                          <img src="./img/col7.jpg" alt="" />엠부쉬
+                        </div>
+                      </div>
+                      <div class="content_b">
+                        <div class="content">
+                          <img src="./img/col8.jpg" alt="" />월드 오브
+                          워크래프트
+                        </div>
+                        <div class="content">
+                          <img src="./img/col9.jpg" alt="" />마린 세르
+                        </div>
+                        <div class="content">
+                          <img src="./img/col10.jpg" alt="" />산쿠안즈
+                        </div>
+                        <div class="content">
+                          <img src="./img/col11.jpg" alt="" />제니
+                        </div>
+                        <div class="content">
+                          <img src="./img/col12.jpg" alt="" />알렉산더 왕
+                        </div>
+                        <div class="content">
+                          <img src="./img/col13.jpg" alt="" />디플로
+                        </div>
+                        <div class="content">
+                          <img src="./img/col14.jpg" alt="" />헨릭 빕스코브
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li><a href="#">스타일</a></li>
+            <li><a href="#">브랜드이슈</a></li>
+            <li><a href="#">매장보기</a></li>
+            <li><a href="#">수리서비스</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="tnb">
+        <div class="search">
+          <a href="#">
+            <svg
+              version="1.1"
+              baseProfile="basic"
+              id="레이어_1"
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              x="0px"
+              y="0px"
+              viewBox="0 0 30 30"
+              xml:space="preserve"
+            >
+              <path
+                d="M13.5,24.1c-5.8,0-10.6-4.8-10.6-10.6S7.7,2.9,13.5,2.9s10.6,4.8,10.6,10.6S19.3,24.1,13.5,24.1z M13.5,4.1
+            c-5.2,0-9.4,4.2-9.4,9.4c0,5.2,4.2,9.4,9.4,9.4c5.2,0,9.4-4.2,9.4-9.4C22.9,8.3,18.7,4.1,13.5,4.1z"
+              ></path>
+              <rect
+                x="21.2"
+                y="20.7"
+                transform="matrix(0.787 -0.617 0.617 0.787 -10.2878 18.6108)"
+                width="1.2"
+                height="7.1"
+              ></rect>
+            </svg>
+          </a>
+        </div>
+        <div class="shop_kr"><a href="#">Shop in kor</a></div>
+        <div class="login"><a href="#">로그인</a></div>
+        <div class="cart">
+          <a href="#">
+            <svg
+              version="1.2"
+              baseProfile="tiny"
+              id="레이어_1"
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              x="0px"
+              y="0px"
+              viewBox="0 0 30 30"
+              xml:space="preserve"
+            >
+              <path
+                d="M20.7,8.9c0.1-1.3,0.1-4.5-1.7-6.5c-1-1.1-2.3-1.6-3.9-1.6c-1.7,0-3,0.6-3.9,1.6c-1.7,2-1.8,5.2-1.7,6.5H3.6v19.8h22.9V8.9
+            H20.7z M12,3.3c0.7-0.8,1.7-1.2,3-1.2c1.3,0,2.3,0.4,3,1.2c1.5,1.7,1.5,4.6,1.4,5.7h-8.9C10.6,7.9,10.5,5,12,3.3z M25.2,27.6H4.8
+            V10.1h20.5V27.6z"
+              ></path>
+            </svg>
+            <span class="cart_count">0</span>
+          </a>
+        </div>
+        <div class="tnb_wrapper">
+          <div class="tnb_wrap">
+            <span class="span_c"></span>
+            <span class="span_c"></span>
+            <span class="span_c"></span>
+          </div>
+        </div>
+      </div>
+      <div class="sub_bg"></div>
+    </header>
+    <div class="container">
+      <section class="sec1">
+        <figure>
+          <video
+            class="main-video loaded"
+            autoplay
+            playsinline=""
+            muted=""
+            loop=""
+          >
+            <source src="./video1.mp4" type="video/mp4" />
+          </video>
+        </figure>
+        <div class="txt_info">
+          <h2>
+            <span class="info_sub">새로운 컬렉션 라인</span>BOLD COLLECTION
+          </h2>
+          <div class="info_more">
+            <a href="#" class="new_info">신제품 보기</a>
+            <a href="#" class="detail_info">자세히 보기</a>
+          </div>
+        </div>
+      </section>
+      <section class="sec2">
+        <figure>
+          <video
+            class="main-video loaded"
+            autoplay
+            playsinline=""
+            muted=""
+            loop=""
+          >
+            <source src="./video2.mp4" type="video/mp4" />
+          </video>
+        </figure>
+        <div class="txt_info">
+          <h2>
+            <span class="info_sub">볼드 컬렉션 스토리를 감상하세요</span>BOLD
+            COLLECTION STORY
+          </h2>
+          <div class="info_more">
+            <a href="#" class="detail_info">자세히 보기</a>
+          </div>
+        </div>
+      </section>
+      <section class="content_area">
+        <div class="content_wrap">
+          <h3>다양한 선글라스를 둘러보세요</h3>
+          <div id="owl-banner" class="owl-carousel owl-theme">
+            <div class="item">
+              <img src="./img/sun1.jpg" alt="" /><span>2023 컬렉션</span>
+            </div>
+            <div class="item">
+              <img src="./img/sun2.jpg" alt="" /><span>볼드 컬렉션</span>
+            </div>
+            <div class="item">
+              <img src="./img/sun3.jpg" alt="" /><span>베스트셀러</span>
+            </div>
+            <div class="item">
+              <img src="./img/sun4.jpg" alt="" /><span>선물추천</span>
+            </div>
+            <div class="item">
+              <img src="./img/sun5.jpg" alt="" /><span>틴트 렌즈</span>
+            </div>
+            <div class="item">
+              <img src="./img/sun6.jpg" alt="" /><span>클래식 디자인</span>
+            </div>
+            <div class="item">
+              <img src="./img/sun7.jpg" alt="" /><span>사각 프레임</span>
+            </div>
+            <div class="item">
+              <img src="./img/sun8.jpg" alt="" /><span>캣아이 프레임</span>
+            </div>
+            <div class="item">
+              <img src="./img/sun9.jpg" alt="" /><span>원형 프레임</span>
+            </div>
+          </div>
+        </div>
+        <div class="content_wrap">
+          <h3>자신만의 안경을 찾아보세요</h3>
+          <div class="owl-carousel owl-theme">
+            <div class="item">
+              <img src="./img/glass1.jpg" alt="" /><span>베스트셀러</span>
+            </div>
+            <div class="item">
+              <img src="./img/glass2.jpg" alt="" /><span>틴트 렌즈</span>
+            </div>
+            <div class="item">
+              <img src="./img/glass3.jpg" alt="" /><span>블루라이트 차단</span>
+            </div>
+            <div class="item">
+              <img src="./img/glass4.jpg" alt="" /><span>선물추천</span>
+            </div>
+            <div class="item">
+              <img src="./img/glass5.jpg" alt="" /><span>클래식 디자인</span>
+            </div>
+            <div class="item">
+              <img src="./img/glass6.jpg" alt="" /><span>사각 프레임</span>
+            </div>
+            <div class="item">
+              <img src="./img/glass7.jpg" alt="" /><span>원형 프레임</span>
+            </div>
+          </div>
+        </div>
+        <div class="content_wrap">
+          <h3>콜라보레이션 구경하기</h3>
+          <div class="owl-carousel owl-theme">
+            <div class="item">
+              <img src="./img/col1.jpg" alt="" /><span>몽클레르</span>
+            </div>
+            <div class="item">
+              <img src="./img/col2.jpg" alt="" /><span>HBA</span>
+            </div>
+            <div class="item">
+              <img src="./img/col3.jpg" alt="" /><span>젠틀 가든</span>
+            </div>
+            <div class="item">
+              <img src="./img/col4.jpg" alt="" /><span>코페르니</span>
+            </div>
+            <div class="item">
+              <img src="./img/col5.jpg" alt="" /><span>YK Jeong</span>
+            </div>
+            <div class="item">
+              <img src="./img/col6.jpg" alt="" /><span>헤론 프레스톤</span>
+            </div>
+            <div class="item">
+              <img src="./img/col7.jpg" alt="" /><span>엠부쉬</span>
+            </div>
+            <div class="item">
+              <img src="./img/col8.jpg" alt="" /><span
+                >월드 오브 워크래프트</span
+              >
+            </div>
+            <div class="item">
+              <img src="./img/col9.jpg" alt="" /><span>마린 세르</span>
+            </div>
+            <div class="item">
+              <img src="./img/col10.jpg" alt="" /><span>산쿠안즈</span>
+            </div>
+            <div class="item">
+              <img src="./img/col11.jpg" alt="" /><span>제니</span>
+            </div>
+            <div class="item">
+              <img src="./img/col12.jpg" alt="" /><span>알렉산더 왕</span>
+            </div>
+            <div class="item">
+              <img src="./img/col13.jpg" alt="" /><span>엠부쉬</span>
+            </div>
+            <div class="item">
+              <img src="./img/col14.jpg" alt="" /><span>디플로</span>
+            </div>
+            <div class="item">
+              <img src="./img/col15.jpg" alt="" /><span>헨릭 빕스코브</span>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <footer class="main_footer">
+      <div class="footer_nav">
+        <div class="ft_nav_sec">
+          <div class="ft_nav_title">고객 서비스</div>
+          <div class="ft_nav_group">
+            <ul>
+              <li><a href="#">문의</a></li>
+              <li><a href="#">배송</a></li>
+              <li><a href="#">서비스</a></li>
+              <li><a href="#">교환 및 반품</a></li>
+              <li><a href="#">주문조회</a></li>
+              <li><a href="#">주문취소</a></li>
+              <li><a href="#">매장 픽업 서비스</a></li>
+              <li><a href="#">수리서비스 가이드</a></li>
+              <li><a href="#">제품 사용 가이드</a></li>
+              <li><a href="#">시리얼 넘버 조회</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="ft_nav_sec">
+          <div class="ft_nav_title">법적 고지</div>
+          <div class="ft_nav_group">
+            <ul>
+              <li><a href="#">공지사항</a></li>
+              <li><a href="#">이용약관</a></li>
+              <li><a href="#">개인정보처리방침</a></li>
+              <li><a href="#">쿠키 정책</a></li>
+              <li><a href="#">기프트카드 이용약관</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="ft_nav_sec">
+          <div class="ft_nav_title">소셜 미디어</div>
+          <div class="ft_nav_group">
+            <ul>
+              <li><a href="#">페이스북</a></li>
+              <li><a href="#">인스타그램</a></li>
+              <li><a href="#">유튜브</a></li>
+              <li><a href="#">트위터</a></li>
+              <li><a href="#">카카오톡</a></li>
+              <li><a href="#">핀터레스트</a></li>
+              <li><a href="#">위쳇</a></li>
+              <li><a href="#">웨이보</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <p class="copy_title">© 2022 GENTLE MONSTER</p>
+        <div class="footer_txt">
+          <div class="font--kr">
+            주) 아이아이컴바인드
+            <span class="between-bar">|</span>
+            대표자명: 김한국
+            <span class="between-bar">|</span>
+            사업자번호 : 119-86-38589
+            <span class="between-bar">|</span>
+            통신판매신고번호: 제 2014- 서울마포 -1050 호 (사업자 정보 확인)
+
+            <span class="between-bar">|</span>
+            이메일 문의: cs@gentlemonster.com
+            <span class="between-bar">|</span>
+            개인정보보호책임자: 정태호
+            <span class="between-bar">|</span>
+            주소: 서울특별시 마포구 어울마당로 5 길 41
+            <span class="between-bar">|</span>
+            대표번호: 1600-2126
+          </div>
+          <div class="guarantee-text font--kr margin_t2">
+            고객님의 안전한 현금자산 거래를 위하여 하나은행과 채무지급보증계약을
+            체결하여 보장해드리고 있습니다.
+            <span class="footer_m">서비스 가입사실 확인</span>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
